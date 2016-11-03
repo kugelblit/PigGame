@@ -16,7 +16,7 @@ public class PigLogic {
 	}
 
     public int dado1(){
-    int dado = ThreadLocalRandom.current().nextInt(1,6 + 1); //elije un númeral alazar entre 1 y 6
+    int dado = ThreadLocalRandom.current().nextInt(1,6 + 1); //elije un nÃºmeral alazar entre 1 y 6
     return dado;
     }
     public int dado2(){
@@ -24,7 +24,7 @@ public class PigLogic {
     return dado;
     }
     
-    public int temporal(int dado1, int dado2){ //toma las instacias de los dados para así determinar una acción con su resultado
+    public int temporal(int dado1, int dado2){ //toma las instacias de los dados para asÃ­ determinar una acciÃ³n con su resultado
     	
     	int suma = 0; //lo que se devuelve
         
@@ -51,7 +51,7 @@ public class PigLogic {
     }
     
     public void inicio(){	  
- 	   JFrame frame = new JFrame(); //objeto que contiene array la cual da las opciones de empezar el juego o salir de él
+ 	   JFrame frame = new JFrame(); //objeto que contiene array el cual da las opciones de empezar el juego o salir de Ã©l
     	String[] options = new String[2];
     	options[0] = new String("Jugar");
     	options[1] = new String("Salir");
@@ -62,7 +62,7 @@ public class PigLogic {
  	   case 0:             //si elije jugar, comienza el juego
  		   this.juego();
  		   break;
- 	   case 1:             //si elije salir, le presenta la opción de realmente salir o volver al menu
+ 	   case 1:             //si elije salir, le presenta la opciÃ³n de realmente salir o volver al menu
  	    	String[] opciones = new String[2];
  	    	opciones[0] = new String("Volver");
  	    	opciones[1] = new String("Salir");
@@ -140,9 +140,9 @@ public class PigLogic {
       
    
    
-	public void juegoCpu(){     //turno de la máquina
+	public void juegoCpu(){     //turno de la mÃ¡quina
 		
-		for(int i =0; i < 3; i++){  //la máquina tira 3 veces durante su turno
+		for(int i =0; i < 3; i++){  //la mÃ¡quina tira 3 veces durante su turno
 			int d1 = this.dado1();
 		    int d2 = this.dado2();
 		    int valor = temporal(d1, d2);
